@@ -1,0 +1,92 @@
+
+/* ==========================================================
+   HOME & ABOUT — VERTICAL SPACE FIX
+   Desktop: tidak diubah
+========================================================== */
+
+@media screen and (max-width: 992px) {
+
+    /* HOME */
+    #hero,
+    .section-hero {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* Hapus tinggi minimum yang memaksa section */
+    .section-hero .hero-wrapper {
+        min-height: 0 !important;
+    }
+
+    /* ABOUT */
+    #about,
+    .section-about {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* Hilangkan margin tambahan di header About */
+    .section-about .section-header {
+        margin-top: 0 !important;
+    }
+}
+
+/* ==========================================================
+   FIX SPACE HOME & ABOUT
+   Khusus perangkat HP dan tablet
+   Desktop tetap dikunci
+========================================================== */
+
+@media screen and (max-device-width: 992px) {
+
+    /* HOME: hapus ruang vertikal berlebihan */
+    #hero.section-hero {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* ABOUT: hilangkan tinggi minimum dan padding */
+    #about.section-about {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+}
+
+/* FIX: Jarak konten Hero dari navbar di HP/tablet */
+@media screen and (max-device-width: 992px) {
+    .hero-content {
+        padding-top: 120px !important;
+    }
+}
+
+
+
+/* ==========================================================
+   SECTION LABEL — UKURAN & JARAK HP/TABLET
+   Desktop tetap tidak berubah
+========================================================== */
+
+@media screen and (max-width: 992px) {
+
+    /* Jarak judul section */
+    .section-header {
+        margin-top: 0;
+    }
+
+    /* Label kecil di atas judul section */
+    .section-header .section-subtitle {
+        font-size: 1rem;
+        letter-spacing: 1.4px;
+        margin-bottom: 20px;
+    }
+
+}
